@@ -1,5 +1,5 @@
 // components/ProjectList.jsx
-"use client"
+"use client";
 import ProjectCard from "./projectCard";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -38,8 +38,25 @@ export default function Projects() {
 
   const projectData = [
     {
+      name: "EdgeFit Coach - On-Device AI Posture Assistant",
+      description:
+        "EdgeFit Coach is an AI-powered real-time posture monitoring and coaching platform built during the Qualcomm Edge AI Hackathon 2025. Fully on-device with MediaPipe, FastAPI, and custom LLMs, it delivers posture detection, personalized feedback, motivational coaching, and privacy-preserving fitness analytics. Optimized for Snapdragon X Elite Copilot+ PCs, it ensures low-latency inference, full data security, and cross-platform deployment without cloud dependency.",
+      techStack: [
+        "FastAPI",
+        "Python",
+        "MediaPipe",
+        "LLM",
+        "ONNX Runtime",
+        "Streamlit",
+      ],
+      liveLink: "https://example.com",
+      githubLink: "https://github.com/kalash33/EdgeFit-Coach",
+      imageUrl: "/proj3.png",
+    },
+    {
       name: "Social Media Monitoring Tool",
-      description: "This Social Media Monitoring (SMM) tool was developed during the Goa Police Hackathon 2024 to assist law enforcement in monitoring platforms such as Instagram and X (formerly Twitter). It identifies harmful content, including fake news, hoaxes, and other illegal activities, and presents actionable insights on a user-friendly dashboard.",
+      description:
+        "This Social Media Monitoring (SMM) tool was developed during the Goa Police Hackathon 2024 to assist law enforcement in monitoring platforms such as Instagram and X (formerly Twitter). It identifies harmful content, including fake news, hoaxes, and other illegal activities, and presents actionable insights on a user-friendly dashboard.",
       techStack: ["NextJS", "Python", "TypeScript", "MongoDB"],
       liveLink: "https://example.com",
       githubLink: "https://github.com/kalash33/Social-Media-Monitor",
@@ -47,7 +64,8 @@ export default function Projects() {
     },
     {
       name: "Chat Meet Application",
-      description: "Chat Meet Application is a real-time chat application that enables users to communicate through text messages, make video calls, and share screens. The main goal of this project is to provide a seamless and interactive communication platform for users to connect with each other remotely. The application is designed to be easy to use and efficient, ensuring a smooth experience for all users.",
+      description:
+        "Chat Meet Application is a real-time chat application that enables users to communicate through text messages, make video calls, and share screens. The main goal of this project is to provide a seamless and interactive communication platform for users to connect with each other remotely. The application is designed to be easy to use and efficient, ensuring a smooth experience for all users.",
       techStack: ["Java", "Spring Boot", "Angular", "MongoDB", "Redis"],
       liveLink: "https://example.com",
       githubLink: "https://github.com/kalash33/Chat_Meet_App",
